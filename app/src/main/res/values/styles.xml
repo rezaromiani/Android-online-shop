@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="NikeStoreBottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/nike_store_navigation_bar_item_tint</item>
+        <item name="itemTextColor">@color/nike_store_navigation_bar_item_tint</item>
+        <item name="itemRippleColor">@color/nike_store_navigation_bar_ripple_color</item>
+        <item name="itemTextAppearanceActive">
+            @style/NikeStoreBottomNavigationItemTextAppearanceActive
+        </item>
+    </style>
+
+    <style name="NikeStoreBottomNavigationItemTextAppearanceActive" parent="TextAppearance.MyTheme.Caption">
+        <item name="fontFamily">@font/primary_bold</item>
+        <item name="android:fontFamily">@font/primary_bold</item>
+    </style>
+
+    <style name="Theme.Nike.AuthTheme.Button" parent="Theme.Nike.AuthTheme">
+        <item name="backgroundTint">?colorOnBackground</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:fontFamily">@font/primary_bold</item>
+    </style>
+
+    <style name="Theme.Nike.AuthTheme.EditText" parent="Theme.Nike.AuthTheme">
+        <item name="android:textColorHint">#46ffffff</item>
+        <item name="android:textColor">?colorOnBackground</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:background">@drawable/background_auth_et</item>
+    </style>
+
+    <style name="Theme.Nike.AuthTheme.snackbar" parent="Widget.MaterialComponents.Snackbar">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Snackbar</item>
+        <item name="actionTextColorAlpha">1</item>
+    </style>
+    <style name="ThemeOverlay.App.Snackbar" parent="">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorOnSurface">@color/black</item>
+    </style>
+    <style name="MyAppbarLayout" parent="Widget.Design.AppBarLayout">
+        <item name="android:background">?attr/colorOnPrimary</item>
+    </style>
+    <style name="CustomBadge" parent="@style/Widget.MaterialComponents.Badge">
+        <item name="backgroundColor">?attr/colorPrimary</item>
+        <item name="fontFamily">@font/primary_regular</item>
+        <item name="android:fontFamily">@font/primary_regular</item>
+    </style>
+
+    <style name="ShippingTextInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+    <style name="ProfileLink">
+        <item name="android:minHeight">46dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">12dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:textAppearance">?textAppearanceBody1</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="Avatar">
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="ShippingTextInputEditTextStyle" parent="Theme.NikeStore">
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

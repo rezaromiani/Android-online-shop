@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/ic_nike_logo"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/signUpTitleScreen"
+            android:textAppearance="?textAppearanceHeadline5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:alpha="0.8"
+            android:text="@string/authHint"
+            android:textAppearance="?textAppearanceBody1" />
+       <EditText
+            android:id="@+id/signUpEmailEt"
+            style="@style/Theme.Nike.AuthTheme.EditText"
+            android:layout_width="@dimen/authViewWidth"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="right|center_vertical"
+            android:hint="@string/email"
+           android:text="r3eza124@gmail.com"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/signUpPasswordEt"
+            style="@style/Theme.Nike.AuthTheme.EditText"
+            android:layout_width="@dimen/authViewWidth"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="right|center_vertical"
+            android:text="123456"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signUpBtn"
+            android:layout_width="@dimen/authViewWidth"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="@string/signUp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.4"
+            android:text="@string/loginHint"
+            android:textAppearance="?textAppearanceBody1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginLinkBtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/primary_bold"
+            android:text="@string/loginTitle" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
